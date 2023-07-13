@@ -109,8 +109,6 @@ License, Version 2.0 (see LICENSE for full text).
 
 ## Project Additions
 
-* <PATH> - 	<Description>
-
 * ./rtl/ibex_register_file_ff.sv - 	added system verilog code to collect hamming weight of registers in each cycle into an output file.
 * ./bash.sh -	this script is used to build and run the system with AES-128 for N random data, including a true hypothesized key and a false one, and copies files into matching directories.
 * ./pyfile.py -	this python script is used to randomized the data for the AES-128 each run, calculate the intermediate value results to return to the bash script, and randomize the dummy instruction seed for each run.
