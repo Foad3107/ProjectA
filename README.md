@@ -107,6 +107,15 @@ Zulip](https://lowrisc.zulipchat.com/#narrow/stream/198227-ibex)!
 Unless otherwise noted, everything in this repository is covered by the Apache
 License, Version 2.0 (see LICENSE for full text).
 
+## Project Additions
+
+./rtl/ibex_register_file_ff.sv - 	added system verilog code to collect hamming weight of registers in each cycle into an output file.
+./bash.sh -	this script is used to build and run the system with AES-128 for N random data, including a true hypothesized key and a false one, and copies files into matching directories.
+./pyfile.py -	this python script is used to randomized the data for the AES-128 each run, calculate the intermediate value results to return to the bash script, and randomize the dummy instruction seed for each run.
+./Makefile - 	changes were made to the ibex_master default makefile to compile our software and build the simple system for VCS simulation including adding security parameter for the ibex core build.
+./examples/sw/simple_system/AES_test/ -		added AES-128 implementation and test run.
+
+
 ## Credits
 
 Many people have contributed to Ibex through the years. Please have a look at

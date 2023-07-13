@@ -138,7 +138,7 @@ module ibex_register_file_ff #(
   assign unused_test_en = test_en_i;
 
 
-//our added code
+//Added Code for Project power modeling.
   integer count;
   integer file;
   reg [9:0] weight;
@@ -159,6 +159,6 @@ module ibex_register_file_ff #(
 	weight = count;
 	$fwrite(file,"%d\n",weight);
   end 
-//added code ended
+//added code ends here
 
 endmodule
