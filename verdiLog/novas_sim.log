@@ -1,0 +1,33 @@
+Invoking simulator...
+
+./build/lowrisc_ibex_ibex_simple_system_0/sim-vcs/lowrisc_ibex_ibex_simple_system_0 -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -ucli
+debImport "-i" "-simflow" "-dbdir" \
+          "./build/lowrisc_ibex_ibex_simple_system_0/sim-vcs/lowrisc_ibex_ibex_simple_system_0.daidir"
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP2_Full64; Runtime version T-2022.06-SP2_Full64;  Jan 18 15:58 2023
+
+*Verdi* Loading libsscore_vcs202206.so
+
+FSDB Dumper for VCS, Release Verdi_T-2022.06-SP2, Linux x86_64/64bit, 11/22/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+
+*Verdi* : Create FSDB file '/users/epfoad/Project/RISCV/ibex-master/inter.fsdb'
+
+*Verdi* : Flush all FSDB Files at 0 s.
+
+*Verdi* : Enable RPC Server(1104468)
+
+srcTBInvokeSim
+Verdi>run
+Initializing memory ibex_simple_system.u_ram.u_ram.gen_generic.u_impl_generic.unnamed$$_2.gen_meminit from file 'examples/sw/simple_system/AES_test/aes-encrypt-test.vmem'.
+ibex_simple_system.u_top.u_ibex_tracer.printbuffer_dumpline.unnamed$$_0: Writing execution trace to trace_core_00000000.log
+Terminating simulation by software request.
+$finish called from file "../src/lowrisc_ibex_sim_shared_0/./rtl/sim/simulator_ctrl.sv", line 93.
+$finish at simulation time               173076
+Simulation complete, time is 173076.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 173076
+CPU Time:      4.100 seconds;       Data structure size:   0.1Mb
+Wed Jan 18 15:59:05 2023
+debExit

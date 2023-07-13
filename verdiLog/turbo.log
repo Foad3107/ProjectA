@@ -1,0 +1,3 @@
+Command Line: /tools/synopsys2223/verdi/T-2022.06-SP2/platform/LINUXAMD64/bin/Novas -i -simflow -simBin ./build/lowrisc_ibex_ibex_simple_system_0/sim-vcs/lowrisc_ibex_ibex_simple_system_0 -simOpt  
+uname(Linux vlsi-orion75 4.18.0-372.16.1.el8_6.x86_64 #1 SMP Tue Jun 28 03:02:21 EDT 2022 x86_64)
+au time 21.977356 5.214153 0.568068 delta 243392512 243392512 total 841584640 841584640
